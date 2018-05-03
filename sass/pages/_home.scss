@@ -1,0 +1,109 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 30rem 0;
+    margin-top: -30vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+        margin-top: -20vh;
+    }
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+            to right bottom, 
+            rgba(52, 128, 92, 0.4),
+            rgba(0, 0, 0, 0.4)),
+    url(../img/background-features.jpg);
+    background-size: cover;
+    margin-top: -10rem;
+
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+        clip-path: polygon(50% 4%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0; 
+    margin-top: -10rem;  
+
+    @include respond(tab-port) {
+        padding: 20rem 0 15rem 0;
+    }
+}
+
+.section-stories {
+    padding: 15rem 0;
+    background-image: linear-gradient(
+            to right bottom, 
+            rgba(52, 128, 92, 0.4),
+            rgba(0, 0, 0, 0.4)),
+    url(../img/hero.jpg);
+    margin-top: -10rem;
+
+    clip-path: polygon(50% 7%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+
+        clip-path: polygon(50% 4%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    }
+}
+
+.section-book {
+    padding: 20rem 0;
+    background-color: #f7f7f7;
+    margin-top: -8rem;
+    height: 100rem;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+}
+
+.book {
+    background-image: linear-gradient(90deg, 
+        rgba($color-black, .9) 0%,
+        rgba($color-black, .9) 50%, 
+        transparent 50%),
+        url(../img/form-image.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    line-height: 1.6;
+    margin-top: 4rem;
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(90deg, 
+        rgba($color-black, .9) 0%,
+        rgba($color-black, .9) 65%, 
+        transparent 65%),
+        url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-black, .9) 0%,
+        rgba($color-black, .9) 100%),
+        url(../img/nat-10.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}

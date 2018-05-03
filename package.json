@@ -1,0 +1,14 @@
+{
+  "name": "starter_kopia",
+  "version": "1.0.0",
+  "description": "project page for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Patryk",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
